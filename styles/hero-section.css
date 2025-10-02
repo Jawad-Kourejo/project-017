@@ -1,0 +1,108 @@
+.hero-wrapper {
+  width: 100%;
+  aspect-ratio: 7 / 3 !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-absolute-division {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: #172a4590;
+  z-index: 1000;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-absolute-division > div{
+  padding: 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.hero-absolute-division > div > h5{
+  padding: 10px 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  background: var(--primary-color);
+}
+.hero-absolute-division > div > h1{
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+.hero-absolute-division > div > p{
+  font-size: 1.4rem;
+}
+.hero-absolute-division > div > span{
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.hero-absolute-division > div > button{
+  padding: 10px 50px;
+  margin-top: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  background: transparent;
+  color: white;
+  border: 3px solid white;
+}
+.hero-absolute-division > div > button:hover{
+  background: white;
+  color: var(--secondary-color);
+}
+
+
+@media (min-width: 768px) {
+  .hero-wrapper {
+    aspect-ratio: 5 / 2;
+  }
+}
+
+.hero {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.slice {
+  width: 25%;
+  height: 100%;
+  transform: translateX(100%);
+  background-repeat: no-repeat;
+  background-size: 400% auto; /* keep natural aspect ratio */
+  background-position-y: center; /* vertical centering */
+}
+
+/* Seamless positioning across 4 slices */
+.slice:nth-child(1) {
+  background-position-x: 0%;
+}
+.slice:nth-child(2) {
+  background-position-x: 33.3333%;
+}
+.slice:nth-child(3) {
+  background-position-x: 66.6666%;
+}
+.slice:nth-child(4) {
+  background-position-x: 100%;
+}
+
+/* - - -- - -  - - --- --- - -  */

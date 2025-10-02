@@ -1,0 +1,223 @@
+/* Carousel */
+
+.slider {
+	background-color: #f7f7f7;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-bottom: 10px solid #f7f7f7;
+	border-top: 10px solid #f7f7f7;
+}
+
+.slide {
+	text-align: center;
+	background: #f7f7f7;
+	display: none;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.active-slide {
+    display: block;
+}
+
+.slider-nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.arrow-prev {
+  margin-right: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+}
+
+.arrow-next {
+  margin-left: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+}
+
+.slider-dots {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.slider-dots li {
+  color: #bbbcbc;
+  display: inline;
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.slider-dots li.active-dot {
+  color: #363636;
+}
+
+footer {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.footer-floating {
+  width: 1150px;
+  height: auto;
+  background-color: #e9e9e9;
+  position: absolute;
+  top: -70px;
+  z-index: 100;
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-floating-left {
+  display: flex;
+  align-items: center;
+  color: var(--secondary-color);
+}
+.footer-floating-left > div > h5 {
+  font-size: 1.2rem;
+}
+.footer-floating-left > div > p {
+  font-size: 1rem;
+}
+.footer-floating-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer-floating-right > input {
+  width: 300px;
+  height: 40px;
+  font-size: 15px;
+  border: 1px solid var(--primary-color);
+  padding: 0rem 1rem;
+  outline: none;
+  margin-right: 10px;
+}
+.footer-floating-right > button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background: var(--primary-color);
+  color: white;
+  cursor: pointer;
+}
+
+.footer-content {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-color);
+}
+.footer-content > div {
+  width: 1150px;
+  margin: 0rem auto;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-content-links {
+  width: 20%;
+  /* border: 1px solid var(--primary-color); */
+}
+.footer-content-days {
+  width: 35%;
+  /* border: 1px solid var(--primary-color); */
+}
+.footer-content-contact {
+  width: 35%;
+  padding-left: 30px;
+  color: white;
+  /* border: 1px solid var(--primary-color); */
+}
+.footer-content-days h3,
+.footer-content-contact h3,
+.footer-content-links h3 {
+  text-decoration: none;
+  color: white;
+  padding-left: 25px;
+  margin-bottom: 18px;
+  border-left: 5px solid var(--primary-color);
+}
+.footer-content-links > ul {
+  padding-left: 20px;
+}
+.footer-content-links > ul > li {
+  margin-bottom: 5px;
+}
+.footer-content-links > ul > li::marker {
+  color: var(--primary-color);
+}
+.footer-content-links > ul > li > a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+}
+.footer-content-days > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ffffff50;
+  padding-bottom: 10px;
+  gap: 50px;
+  margin-bottom: 10px;
+  color: white;
+}
+.footer-content-days > div > p > span {
+  color: var(--primary-color);
+}
+
+.footer-content-days > a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer-content-contact > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ffffff50;
+}
+.footer-content-contact > div > h4 {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.footer-bottom {
+  width: 100%;
+  height: 60px;
+  background: var(--primary-color);
+}
+.footer-bottom > div {
+  width: 1150px;
+  height: 100%;
+  margin: 0rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.footer-bottom > div > div > a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
